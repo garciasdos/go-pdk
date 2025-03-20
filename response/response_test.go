@@ -3,9 +3,9 @@ package response
 import (
 	"testing"
 
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/bridge/bridgetest"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/bridge/bridgetest"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/types/known/structpb"
 )
@@ -16,7 +16,7 @@ func mockResponse(t *testing.T, s []bridgetest.MockStep) Response {
 
 func TestResponse(t *testing.T) {
 	h, err := bridge.WrapHeaders(map[string][]string{
-		"Host":   []string{"example.com"},
+		"Host":         []string{"example.com"},
 		"X-Two-Things": []string{"first", "second"},
 	})
 	assert.NoError(t, err)
@@ -39,7 +39,7 @@ func TestResponse(t *testing.T) {
 	res_h, err := response.GetHeaders(30)
 	assert.NoError(t, err)
 	assert.Equal(t, map[string][]string{
-		"Host":   []string{"example.com"},
+		"Host":         []string{"example.com"},
 		"X-Two-Things": []string{"first", "second"},
 	}, res_h)
 
@@ -53,7 +53,7 @@ func TestResponse(t *testing.T) {
 	assert.NoError(t, response.AddHeader("key", "value"))
 	assert.NoError(t, response.ClearHeader("key"))
 	assert.NoError(t, response.SetHeaders(map[string][]string{
-		"Host":   []string{"example.com"},
+		"Host":         []string{"example.com"},
 		"X-Two-Things": []string{"first", "second"},
 	}))
 }

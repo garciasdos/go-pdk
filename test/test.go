@@ -8,7 +8,7 @@ Trivial example:
 	import (
 		"testing"
 
-		"github.com/Kong/go-pdk/test"
+		"github.com/postmanlabs/go-pdk/test"
 		"github.com/stretchr/testify/assert"
 	)
 
@@ -51,23 +51,23 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Kong/go-pdk"
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/bridge/bridgetest"
-	"github.com/Kong/go-pdk/client"
-	"github.com/Kong/go-pdk/ctx"
-	"github.com/Kong/go-pdk/ip"
-	"github.com/Kong/go-pdk/log"
-	"github.com/Kong/go-pdk/nginx"
-	"github.com/Kong/go-pdk/node"
-	"github.com/Kong/go-pdk/request"
-	"github.com/Kong/go-pdk/response"
-	"github.com/Kong/go-pdk/router"
-	"github.com/Kong/go-pdk/service"
-	service_request "github.com/Kong/go-pdk/service/request"
-	service_response "github.com/Kong/go-pdk/service/response"
+	"github.com/postmanlabs/go-pdk"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/bridge/bridgetest"
+	"github.com/postmanlabs/go-pdk/client"
+	"github.com/postmanlabs/go-pdk/ctx"
+	"github.com/postmanlabs/go-pdk/ip"
+	"github.com/postmanlabs/go-pdk/log"
+	"github.com/postmanlabs/go-pdk/nginx"
+	"github.com/postmanlabs/go-pdk/node"
+	"github.com/postmanlabs/go-pdk/request"
+	"github.com/postmanlabs/go-pdk/response"
+	"github.com/postmanlabs/go-pdk/router"
+	"github.com/postmanlabs/go-pdk/service"
+	service_request "github.com/postmanlabs/go-pdk/service/request"
+	service_response "github.com/postmanlabs/go-pdk/service/response"
 
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/structpb"
 )
@@ -177,7 +177,7 @@ func (res *Response) merge(other Response) {
 }
 
 type Ctx struct {
-	Store	map[string]interface{}
+	Store map[string]interface{}
 }
 
 type envState int
@@ -196,7 +196,7 @@ type TestEnv struct {
 	ServiceReq  Request
 	ServiceRes  Response
 	ClientRes   Response
-	Ctx		 	Ctx
+	Ctx         Ctx
 }
 
 // New creates a new test environment.
@@ -213,7 +213,7 @@ func New(t *testing.T, req Request) (env *TestEnv, err error) {
 		ServiceReq: req.clone(),
 		ServiceRes: Response{Headers: make(http.Header)},
 		ClientRes:  Response{Headers: make(http.Header)},
-		Ctx:		Ctx{Store: make(map[string]interface{})},
+		Ctx:        Ctx{Store: make(map[string]interface{})},
 	}
 
 	b := bridge.New(bridgetest.MockFunc(env)) // check

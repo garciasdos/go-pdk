@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/Kong/go-pdk"
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 	"github.com/stretchr/testify/assert"
 
 	"google.golang.org/protobuf/proto"
@@ -60,7 +60,7 @@ func TestNoHangingChannel(t *testing.T) {
 		Body:   []byte("{}"),
 	})
 	assert.NoError(t, err)
-	env.DoHttps(&Config{ shouldExit: true })
+	env.DoHttps(&Config{shouldExit: true})
 }
 
 func TestSharedContext(t *testing.T) {

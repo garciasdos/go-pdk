@@ -6,9 +6,9 @@ A set of functions to access the routing properties of the request.
 package router
 
 import (
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/entities"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/entities"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 )
 
 // Holds this module's functions.  Accessible as `kong.Router`
@@ -63,20 +63,20 @@ func (c Router) GetService() (service entities.Service, err error) {
 	}
 
 	service = entities.Service{
-		Id:                out.Id,
-		CreatedAt:         int(out.CreatedAt),
-		UpdatedAt:         int(out.UpdatedAt),
-		Name:              out.Name,
-		Retries:           int(out.Retries),
-		Protocol:          out.Protocol,
-		Host:              out.Host,
-		Port:              int(out.Port),
-		Path:              out.Path,
-		ConnectTimeout:    int(out.ConnectTimeout),
-		WriteTimeout:      int(out.WriteTimeout),
-		ReadTimeout:       int(out.ReadTimeout),
-		Tags:              out.Tags,
-// 		ClientCertificate: entities.CertificateKey{Id: out.ClientCertificate.Id},
+		Id:             out.Id,
+		CreatedAt:      int(out.CreatedAt),
+		UpdatedAt:      int(out.UpdatedAt),
+		Name:           out.Name,
+		Retries:        int(out.Retries),
+		Protocol:       out.Protocol,
+		Host:           out.Host,
+		Port:           int(out.Port),
+		Path:           out.Path,
+		ConnectTimeout: int(out.ConnectTimeout),
+		WriteTimeout:   int(out.WriteTimeout),
+		ReadTimeout:    int(out.ReadTimeout),
+		Tags:           out.Tags,
+		// 		ClientCertificate: entities.CertificateKey{Id: out.ClientCertificate.Id},
 	}
 	return
 }

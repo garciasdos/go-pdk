@@ -18,19 +18,19 @@ package pdk
 import (
 	"net"
 
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/client"
-	"github.com/Kong/go-pdk/ctx"
-	"github.com/Kong/go-pdk/ip"
-	"github.com/Kong/go-pdk/log"
-	"github.com/Kong/go-pdk/nginx"
-	"github.com/Kong/go-pdk/node"
-	"github.com/Kong/go-pdk/request"
-	"github.com/Kong/go-pdk/response"
-	"github.com/Kong/go-pdk/router"
-	"github.com/Kong/go-pdk/service"
-	service_request "github.com/Kong/go-pdk/service/request"
-	service_response "github.com/Kong/go-pdk/service/response"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/client"
+	"github.com/postmanlabs/go-pdk/ctx"
+	"github.com/postmanlabs/go-pdk/ip"
+	"github.com/postmanlabs/go-pdk/log"
+	"github.com/postmanlabs/go-pdk/nginx"
+	"github.com/postmanlabs/go-pdk/node"
+	"github.com/postmanlabs/go-pdk/request"
+	"github.com/postmanlabs/go-pdk/response"
+	"github.com/postmanlabs/go-pdk/router"
+	"github.com/postmanlabs/go-pdk/service"
+	service_request "github.com/postmanlabs/go-pdk/service/request"
+	service_response "github.com/postmanlabs/go-pdk/service/response"
 )
 
 // PDK go pdk module

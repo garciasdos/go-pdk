@@ -4,8 +4,8 @@ Node-level utilities
 package node
 
 import (
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 )
 
 // Holds this module's functions.  Accessible as `kong.Node`
@@ -61,4 +61,3 @@ func (n Node) GetMemoryStats() (MemoryStats, error) {
 
 	return ms, nil
 }
-

@@ -16,8 +16,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/Kong/go-pdk"
-	"github.com/Kong/go-pdk/server"
+	"github.com/postmanlabs/go-pdk"
+	"github.com/postmanlabs/go-pdk/server"
 )
 
 // Start the embedded server

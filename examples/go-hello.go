@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Kong/go-pdk"
-	"github.com/Kong/go-pdk/server"
+	"github.com/postmanlabs/go-pdk"
+	"github.com/postmanlabs/go-pdk/server"
 )
 
 func main() {

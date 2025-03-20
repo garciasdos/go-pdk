@@ -12,8 +12,8 @@ before sending it back to the client.
 package response
 
 import (
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/types/known/structpb"
 )
 

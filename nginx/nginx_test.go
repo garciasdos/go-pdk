@@ -3,9 +3,9 @@ package nginx
 import (
 	"testing"
 
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/bridge/bridgetest"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/bridge/bridgetest"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/types/known/structpb"
 )

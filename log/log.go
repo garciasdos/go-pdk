@@ -4,7 +4,7 @@ Write to log file.
 package log
 
 import (
-	"github.com/Kong/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/bridge"
 	"google.golang.org/protobuf/types/known/structpb"
 )
 

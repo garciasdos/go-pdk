@@ -13,8 +13,8 @@ See https://docs.konghq.com/latest/configuration/#trusted_ips
 package ip
 
 import (
-	"github.com/Kong/go-pdk/bridge"
-	"github.com/Kong/go-pdk/server/kong_plugin_protocol"
+	"github.com/postmanlabs/go-pdk/bridge"
+	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
 )
 
 // Holds this module's functions.  Accessible as `kong.Ip`
