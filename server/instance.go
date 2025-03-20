@@ -3,7 +3,7 @@ package server
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/postmanlabs/go-pdk"
+	"github.com/garciasdos/go-pdk"
 	"log"
 	"math/rand"
 	"time"

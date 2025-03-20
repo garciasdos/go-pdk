@@ -3,8 +3,8 @@ package log
 import (
 	"testing"
 
-	"github.com/postmanlabs/go-pdk/bridge"
-	"github.com/postmanlabs/go-pdk/bridge/bridgetest"
+	"github.com/garciasdos/go-pdk/bridge"
+	"github.com/garciasdos/go-pdk/bridge/bridgetest"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/types/known/structpb"
 )

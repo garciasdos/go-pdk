@@ -1,4 +1,4 @@
-module github.com/postmanlabs/go-pdk
+module github.com/garciasdos/go-pdk
 
 go 1.21
 

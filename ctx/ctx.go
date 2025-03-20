@@ -34,8 +34,8 @@ end
 package ctx
 
 import (
-	"github.com/postmanlabs/go-pdk/bridge"
-	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
+	"github.com/garciasdos/go-pdk/bridge"
+	"github.com/garciasdos/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/types/known/structpb"
 )
 

@@ -1,9 +1,9 @@
 package server
 
 import (
-	"github.com/postmanlabs/go-pdk/client"
-	"github.com/postmanlabs/go-pdk/entities"
-	"github.com/postmanlabs/go-pdk/node"
+	"github.com/garciasdos/go-pdk/client"
+	"github.com/garciasdos/go-pdk/entities"
+	"github.com/garciasdos/go-pdk/node"
 )
 
 type Error string

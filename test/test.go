@@ -8,7 +8,7 @@ Trivial example:
 	import (
 		"testing"
 
-		"github.com/postmanlabs/go-pdk/test"
+		"github.com/garciasdos/go-pdk/test"
 		"github.com/stretchr/testify/assert"
 	)
 
@@ -51,23 +51,23 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/postmanlabs/go-pdk"
-	"github.com/postmanlabs/go-pdk/bridge"
-	"github.com/postmanlabs/go-pdk/bridge/bridgetest"
-	"github.com/postmanlabs/go-pdk/client"
-	"github.com/postmanlabs/go-pdk/ctx"
-	"github.com/postmanlabs/go-pdk/ip"
-	"github.com/postmanlabs/go-pdk/log"
-	"github.com/postmanlabs/go-pdk/nginx"
-	"github.com/postmanlabs/go-pdk/node"
-	"github.com/postmanlabs/go-pdk/request"
-	"github.com/postmanlabs/go-pdk/response"
-	"github.com/postmanlabs/go-pdk/router"
-	"github.com/postmanlabs/go-pdk/service"
-	service_request "github.com/postmanlabs/go-pdk/service/request"
-	service_response "github.com/postmanlabs/go-pdk/service/response"
+	"github.com/garciasdos/go-pdk"
+	"github.com/garciasdos/go-pdk/bridge"
+	"github.com/garciasdos/go-pdk/bridge/bridgetest"
+	"github.com/garciasdos/go-pdk/client"
+	"github.com/garciasdos/go-pdk/ctx"
+	"github.com/garciasdos/go-pdk/ip"
+	"github.com/garciasdos/go-pdk/log"
+	"github.com/garciasdos/go-pdk/nginx"
+	"github.com/garciasdos/go-pdk/node"
+	"github.com/garciasdos/go-pdk/request"
+	"github.com/garciasdos/go-pdk/response"
+	"github.com/garciasdos/go-pdk/router"
+	"github.com/garciasdos/go-pdk/service"
+	service_request "github.com/garciasdos/go-pdk/service/request"
+	service_response "github.com/garciasdos/go-pdk/service/response"
 
-	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
+	"github.com/garciasdos/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/structpb"
 )

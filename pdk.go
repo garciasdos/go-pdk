@@ -18,19 +18,19 @@ package pdk
 import (
 	"net"
 
-	"github.com/postmanlabs/go-pdk/bridge"
-	"github.com/postmanlabs/go-pdk/client"
-	"github.com/postmanlabs/go-pdk/ctx"
-	"github.com/postmanlabs/go-pdk/ip"
-	"github.com/postmanlabs/go-pdk/log"
-	"github.com/postmanlabs/go-pdk/nginx"
-	"github.com/postmanlabs/go-pdk/node"
-	"github.com/postmanlabs/go-pdk/request"
-	"github.com/postmanlabs/go-pdk/response"
-	"github.com/postmanlabs/go-pdk/router"
-	"github.com/postmanlabs/go-pdk/service"
-	service_request "github.com/postmanlabs/go-pdk/service/request"
-	service_response "github.com/postmanlabs/go-pdk/service/response"
+	"github.com/garciasdos/go-pdk/bridge"
+	"github.com/garciasdos/go-pdk/client"
+	"github.com/garciasdos/go-pdk/ctx"
+	"github.com/garciasdos/go-pdk/ip"
+	"github.com/garciasdos/go-pdk/log"
+	"github.com/garciasdos/go-pdk/nginx"
+	"github.com/garciasdos/go-pdk/node"
+	"github.com/garciasdos/go-pdk/request"
+	"github.com/garciasdos/go-pdk/response"
+	"github.com/garciasdos/go-pdk/router"
+	"github.com/garciasdos/go-pdk/service"
+	service_request "github.com/garciasdos/go-pdk/service/request"
+	service_response "github.com/garciasdos/go-pdk/service/response"
 )
 
 // PDK go pdk module

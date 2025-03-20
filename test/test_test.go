@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/postmanlabs/go-pdk"
-	"github.com/postmanlabs/go-pdk/bridge"
-	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
+	"github.com/garciasdos/go-pdk"
+	"github.com/garciasdos/go-pdk/bridge"
+	"github.com/garciasdos/go-pdk/server/kong_plugin_protocol"
 	"github.com/stretchr/testify/assert"
 
 	"google.golang.org/protobuf/proto"

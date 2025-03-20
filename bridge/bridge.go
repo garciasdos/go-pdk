@@ -10,7 +10,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/postmanlabs/go-pdk/server/kong_plugin_protocol"
+	"github.com/garciasdos/go-pdk/server/kong_plugin_protocol"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/structpb"
 )
